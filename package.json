@@ -1,0 +1,14 @@
+{
+  "name": "qzrecs",
+  "version": "0.1.0",
+  "description": "A recommendation engine for Quartz",
+  "main": "index.js",
+  "author": "John West",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "q": "^1.4.1",
+    "request-json": "^0.5.3",
+    "underscore": "^1.8.3"
+  }
+}

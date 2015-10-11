@@ -1,0 +1,86 @@
+* {
+	font-family: "Source Sans Pro";
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+h1 {
+	font-size: 60px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+form {
+	input {
+		background-color: transparent;
+		border: none;
+		box-sizing: border-box;
+		font-size: 200px;
+		margin-top: -100px;
+		outline: none;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		height: 200px;
+	}
+	&.disabled {
+		opacity: 0.25;
+	}
+}
+
+#articles {
+	background-color: rgb(0,0,0);
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	&.enabled {
+		display: block;
+	}
+	article {
+		background-size: cover;
+		background-position: 50% 50%;
+		position: relative;
+		width: 100%;
+		height: 300px;
+		a {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		h1 {
+			color: rgb(255,255,255);
+			font-size: 40px;
+			letter-spacing: 4px;
+			margin: 10px auto;
+			position: relative;
+			width: 960px;
+		}
+		.gloss {
+			background-color: rgba(0,0,0,0.5);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+		}
+	}
+}
