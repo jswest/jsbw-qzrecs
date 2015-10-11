@@ -89,7 +89,10 @@ app.get( '/api/:id', function ( req, res ) {
 
 });
 
-var server = app.listen( 3000, function () {
+var ip = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1",
+	port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+
+var server = app.listen( port, ip, function () {
 
 	var host = server.address().address;
 	var port = server.address().port;
