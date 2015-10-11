@@ -24,6 +24,12 @@ app.get( '/api/:id', function ( req, res ) {
 
 	var id = req.params.id;
 
+	var idString = id + '';
+
+	if ( idString.length !== 6 ) {
+		return;
+	}
+
 	Q( function () {
 		return QZ._getPost( id );
 	}() )
